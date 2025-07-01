@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Udipta's Drum Kit</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>🎧 Udipta's Drum Kit</h1>
+
+    <div class="controls">
+      <button id="record">⏺️ Record</button>
+      <button id="stop">⏹️ Stop</button>
+      <button id="play">▶️ Play</button>
+      <div class = "vol">
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+        <label for="volume">🔊 Volume</label>
+      </div>
+    </div>
+
+    <div class="kit">
+      <div class="pad" data-key="w">
+        <img
+          src="./images/floor-tom.png"
+          alt="tom"
+          class="pad-icon"
+        />
+        <span>W</span>
+        <p>Tom 1</p>
+      </div>
+      <div class="pad" data-key="a">
+        <img
+          src="./images/floor-tom.png"
+          alt="tom"
+          class="pad-icon"
+        />
+        <span>A</span>
+        <p>Tom 2</p>
+      </div>
+      <div class="pad" data-key="s">
+        <img
+          src="./images/floor-tom.png"
+          alt="tom"
+          class="pad-icon"
+        />
+        <span>S</span>
+        <p>Tom 3</p>
+      </div>
+      <div class="pad" data-key="d">
+        <img
+          src="./images/floor-tom.png"
+          alt="tom"
+          class="pad-icon"
+        />
+        <span>D</span>
+        <p>Tom 4</p>
+      </div>
+      <div class="pad" data-key="j">
+        <img
+          src="./images/snare-drum.png"
+          alt="snare"
+          class="pad-icon"
+        />
+        <span>J</span>
+        <p>Snare</p>
+      </div>
+      <div class="pad" data-key="k">
+        <img
+          src="./images/cymbals.png"
+          alt="crash"
+          class="pad-icon"
+        />
+        <span>K</span>
+        <p>Crash</p>
+      </div>
+      <div class="pad" data-key="l">
+        <img
+          src="./images/bass-drum.png"
+          alt="kick"
+          class="pad-icon"
+        />
+        <span>L</span>
+        <p>Kick</p>
+      </div>
+    </div>
+
+    <footer>Built with ❤️ by Udipta Saha | © 2025</footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

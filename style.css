@@ -1,0 +1,106 @@
+body {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-top: 30px;
+  text-shadow: 3px 0 #da0463, -3px 0 cyan;
+}
+
+.kit {
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pad {
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.pad:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pad span {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.pad p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+}
+
+.pad-icon {
+  height: 40px;
+}
+
+footer {
+  margin: 40px 0 20px;
+  font-size: 1rem;
+}
+
+.pressed {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.controls {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 1rem;
+}
+
+.controls button, .vol {
+  padding: 8px 15px;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1rem;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.controls button:hover, .vol:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.controls input[type="range"] {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.controls .recording {
+  background-color: red;
+  color: white;
+  border-color: red;
+}
+
+.controls .recording:hover{
+  background-color: red;
+}
